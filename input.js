@@ -21,6 +21,12 @@ const setupInput = function(conn) {
       conn.write('Move: right');
     } else if (data == '\u0003') {
       process.exit();
+    } else if (data == '1') {
+      conn.write('Say: OUTTA MY WAY')
+    } else if (data == '2') {
+      conn.write('Say: YOU SNAKE...')
+    } else if (data == '3') {
+      conn.write('Say: HISSSSS')
     }
   });
 
